@@ -16,16 +16,16 @@ int main(){
         cin>>Input_Pin;
         if(Input_Pin==Pin)
         {
-            Logger::Info("Login Succesful");
-            Logger::Info("***************");
-            Logger::Info("**Hello Admin**");
-            Logger::Info("***************");
+            Sunil::Info("Login Succesful");
+            Sunil::Info("***************");
+            Sunil::Info("**Hello Admin**");
+            Sunil::Info("***************");
         }
         else
         {
                         //Wrong Pin attemps 3
             Warning++;
-            Logger::Warn("Try Again");
+            Sunil::Warn("Try Again");
         }
     }
         //Pass Code attempts Exceeded 3 times then Accout is Bloked
@@ -33,7 +33,7 @@ int main(){
     {
         if(Warning>3)
         {
-            Logger::Warn("Your Account Is Blocked! ");
+            Sunil::Warn("Your Account Is Blocked! ");
             exit(0);
         }
     }
